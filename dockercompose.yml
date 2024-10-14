@@ -4,7 +4,7 @@ services:
   
  
   backend:
-    image: frontendimg 
+    image: backendimg 
     container_name: backendcon
     build:
       context: ./backendcon  
