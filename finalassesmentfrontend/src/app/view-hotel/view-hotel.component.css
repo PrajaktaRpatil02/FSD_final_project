@@ -1,0 +1,136 @@
+.main
+  {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: rgb(239, 225, 225);
+    padding-top: 1%;
+  }
+
+  .Heading
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+
+
+  }
+
+  .hotelDetails
+  {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    background-color:#ebede6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  .img
+  {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    transition: 0.3s
+  }
+  .hotelname{
+    color: black;
+    padding-left: 30%;
+    display: flex;
+  }
+  details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  p{
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    font-size: 16px;
+  }
+  .btn{
+    padding: 20px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.one {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.inp {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.btn-modal {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-modal:hover {
+    background-color: darkorange;
+}
+

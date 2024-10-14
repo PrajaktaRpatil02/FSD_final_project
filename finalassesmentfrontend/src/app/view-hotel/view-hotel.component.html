@@ -1,0 +1,54 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<main class="main">
+   
+    
+    <div class="Heading">
+      <h2>Hotel Details</h2>
+    </div>
+
+    <div class="banner">
+        @for(hotel of hotelResponseList;track  hotel.id){
+           
+    <div class="hotelDetails" >
+      
+      <img class="img" [src]="hotel.imageUrl" alt="{{ hotel.name }} Image" />
+        <h3 class="hotelname">{{hotel.name}}</h3>
+        <div class="details">
+        <p >City : {{hotel.city}}</p>
+        <p > Rating :{{hotel.rating}}</p>
+        <p > Room Price: {{hotel.roomPrice}}</p>
+        
+        <p>
+            Gym:
+            <i *ngIf="hotel.gym" class="fas fa-check" style="color:green;"></i>
+            <i *ngIf="!hotel.gym" class="fas fa-times" style="color:red;"></i>
+          </p>
+       
+        <p > Pool :
+            <i *ngIf="hotel.pool" class="fas fa-check" style="color:green;"></i>
+            <i *ngIf="!hotel.pool" class="fas fa-times" style="color:red;"></i>
+        </p>
+        <p > wifi :
+            <i *ngIf="hotel.wifi" class="fas fa-check" style="color:green;"></i>
+            <i *ngIf="!hotel.wifi" class="fas fa-times" style="color:red;"></i>
+        </p>
+        
+    </div>
+
+    
+  </div>
+}
+</div>
+  </main>
+
+
+
+
+
+
+
+
+  

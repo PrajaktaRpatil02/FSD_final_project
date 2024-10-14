@@ -1,0 +1,16 @@
+<div class="container" >
+  <form class="form" [formGroup]="filterForm">
+    <h3>Filter Details</h3>
+    <label>Enter City :</label>
+    <input type="text" class="inp" placeholder="Enter city" [formControl]="city">
+    <label>Enter Min rating</label>
+    <input type="number" class="inp" placeholder="Enter min value:" min="0" required [formControl]="min">
+
+    <label>Enter Max rating</label>
+    <input type="number" class="inp" placeholder="Enter max value:" max="5" required [formControl]="max">
+
+    <button type="button" class="btn" (click)="addFilter()" >Submit</button>
+
+  </form>
+
+</div>
